@@ -6,14 +6,15 @@ import { TransacoesModule } from './transacoes/transacoes.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'mysql',
+      type: 'postgres',
       host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: '',
-      database: 'myfinance',
+      port: 5432,
+      username: 'admin',
+      password: 'admin',
+      database: 'myfinance_db',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
+      migrationsTableName: "migrations",
+      synchronize: false,
     }),
     PlanoContasModule,
     TransacoesModule,
