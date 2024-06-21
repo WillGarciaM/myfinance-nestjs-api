@@ -30,7 +30,11 @@
 
 ```bash
 $ npm install
-$ docker-compose -d up OR docker compose up
+
+$ docker-compose -d up
+OR
+$ docker compose up
+
 $ npm run start
 ```
 
