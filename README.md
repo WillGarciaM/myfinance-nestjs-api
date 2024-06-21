@@ -30,6 +30,8 @@
 
 ```bash
 $ npm install
+$ docker-compose -d up OR docker compose up
+$ npm run start
 ```
 
 ## Running the app
